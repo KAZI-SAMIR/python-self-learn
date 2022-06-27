@@ -1,0 +1,29 @@
+>>> import os
+>>> os.getcwd()        # short for "get current working directory"
+'/home/akuli'
+>>> os.mkdir('stuff')  # create a folder, short for "make directory"
+>>>
+>>> os.path.isfile('hello.txt')  # check if it's a file
+True
+>>> os.path.isfile('stuff')
+False
+>>> os.path.isdir('hello.txt')   # check if it's a directory
+False
+>>> os.path.isdir('stuff')
+True
+>>> os.path.exists('hello.txt')  # check if it's anything
+True
+>>> os.path.exists('stuff')
+True
+>>>
+>>> # this joins with '\\' on windows and '/' on most other systems
+>>> path = os.path.join('stuff', 'hello-world.txt')
+>>> path
+'stuff/hello-world.txt'
+>>> with open(path, 'w') as f:
+...     # now this goes to the stuff folder we created
+...     print("Hello World!", file=f)
+...
+>>> os.listdir('stuff')  # create a list of everything in stuff
+['hello-world.txt']
+>>>

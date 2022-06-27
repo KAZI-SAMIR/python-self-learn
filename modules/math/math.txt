@@ -1,0 +1,18 @@
+>>> import math
+>>> math
+<module 'math' (built-in)>
+>>> math.pi                  # approximate value of π
+3.141592653589793
+>>> math.sqrt(2)             # square root of 2
+1.4142135623730951
+>>> math.radians(180)        # convert degrees to radians
+3.141592653589793
+>>> math.degrees(math.pi/2)  # convert radians to degrees
+90.0
+>>> math.sin(math.pi/2)      # sin of 90 degrees or 1/2 π radians
+1.0
+>>>
+print(math.pow(2, 3))    # 8.0, exponential function
+print(math.floor(9.81))  # 9, rounding to the lowest
+print(math.ceil(9.81))   # 10, rounding to the highest
+print(math.log10(100))   # 2, logarithm with 10 as 

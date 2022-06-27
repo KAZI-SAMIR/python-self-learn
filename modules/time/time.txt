@@ -1,0 +1,26 @@
+### Time-related things
+
+The official documentation for the time module is
+[here](https://docs.python.org/3/library/time.html).
+
+```python
+>>> import time
+>>> time.sleep(1)   # wait one second
+>>> time.time()     # return time in seconds since beginning of the year 1970
+1474896325.2394648
+>>> time.strftime('%d.%m.%Y %H:%M:%S')  # format current time nicely
+'07.04.2017 19:08:33'
+>>>
+```
+
+You are probably wondering how `time.time()` can be used and why its
+timing starts from the beginning of 1970. `time.time()` is useful for
+measuring time differences because we can save its return value to a
+variable before doing something, and then afterwards check how much it
+changed. There's an example that does this in [the example
+section](#examples).
+
+If you want to know why it starts from 1970 you can read something like
+[this](http://stackoverflow.com/questions/1090869/why-is-1-1-1970-the-epoch-time).
+See `help(time.strftime)` if you want to know about more format
+specifiers like `%d`, `%m` etc. that `time.strftime` can take.
